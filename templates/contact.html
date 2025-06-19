@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<style>
+  .contact-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 12px;
+  }
+
+  .contact-info i {
+    color: #0d6efd;
+    margin-right: 8px;
+  }
+</style>
+
+<div class="container mt-5 contact-section">
+  <h2 class="mb-4 text-primary"><i class="bi bi-person-lines-fill me-2"></i>Contact Information</h2>
+
+  <div class="contact-info">
+    <p><i class="bi bi-envelope-fill"></i>Email: <a href="mailto:nagaraju.dev@gmail.com">neelamnagaraju1323@gmail.com</a></p>
+    <p><i class="bi bi-telephone-fill"></i>Phone: +919392511479</p>
+    <p><i class="bi bi-whatsapp"></i>WhatsApp: +919392511479</p>
+    <p><i class="bi bi-geo-alt-fill"></i>Location: Tadepalligudem, Andhra Pradesh, India</p>
+    <p><i class="bi bi-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/uma-venkata-naga-raju-neelam-232044299/" target="_blank">linkedin.com/in/nagaraju-profile</a></p>
+    <p><i class="bi bi-github"></i>GitHub: <a href="https://github.com/nagaraju1323" target="_blank">github.com/nagaraju-dev</a></p>
+  </div>
+</div>
+{% endblock %}

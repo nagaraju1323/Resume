@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Skills{% endblock %}
+
+{% block content %}
+<style>
+  .skills-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .badge-skill {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 8px 14px;
+  }
+
+  .progress {
+    height: 20px;
+    margin-bottom: 15px;
+  }
+
+  .progress-bar {
+    font-size: 0.85rem;
+  }
+</style>
+
+<div class="container mt-5 skills-section">
+  <h2 class="mb-4 text-primary"><i class="bi bi-tools me-2"></i>Skills</h2>
+
+  <h5 class="mt-4">Technical Skills</h5>
+  <span class="badge bg-primary badge-skill">Python</span>
+  <span class="badge bg-success badge-skill">HTML5</span>
+  <span class="badge bg-info text-dark badge-skill">CSS3</span>
+  <span class="badge bg-warning text-dark badge-skill">JavaScript</span>
+  <span class="badge bg-danger badge-skill">SQL</span>
+  <span class="badge bg-secondary badge-skill">Flask</span>
+  <span class="badge bg-dark badge-skill">Git & GitHub</span>
+
+  <h5 class="mt-4">Soft Skills</h5>
+  <span class="badge bg-light text-dark badge-skill">Problem Solving</span>
+  <span class="badge bg-light text-dark badge-skill">Teamwork</span>
+  <span class="badge bg-light text-dark badge-skill">Communication</span>
+  <span class="badge bg-light text-dark badge-skill">Time Management</span>
+  <span class="badge bg-light text-dark badge-skill">Adaptability</span>
+
+  
+  </div>
+</div>
+{% endblock %}

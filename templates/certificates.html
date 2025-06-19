@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Certificates{% endblock %}
+
+{% block content %}
+<style>
+  .certificates-section {
+    background-color: #e0f7fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .certificate-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .certificate-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border-left: 5px solid #00796b;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  }
+
+  .certificate-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .certificate-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .certificate-title {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+</style>
+
+<div class="certificates-section container">
+  <h2>Certificates</h2>
+  <div class="certificate-gallery">
+    <div class="certificate-card">
+      <img src="https://elearn.nptel.ac.in/wp-content/uploads/2022/01/IIT-M-2-566x400.jpg" alt="NPTEL - DSA Using JAVA">
+      <div class="certificate-title">NPTEL - DSA Using JAVA</div>
+    </div>
+    <div class="certificate-card">
+      <img src="https://cdn.slidesharecdn.com/ss_thumbnails/certificateofcompletionpythondataanalysis-190403043141-thumbnail.jpg?width=640&height=640&fit=bounds" alt="Data Analaysis Using Python">
+      <div class="certificate-title">Data Analaysis Using Python</div>
+    </div>
+    <div class="certificate-card">
+      <img src="https://th.bing.com/th/id/OIP.aKtoeInylMg1QYAeLlNeFQHaFg?rs=1&pid=ImgDetMain" alt="Machine Learning Using Python">
+      <div class="certificate-title">Machine Learning Using Python</div>
+    </div>
+    <div class="certificate-card">
+      <img src="https://yourengineer.in/wp-content/uploads/2022/09/Course_Certificate_6_-1024x724.webp" alt="React Front to Back">
+      <div class="certificate-title">React Front to Back</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

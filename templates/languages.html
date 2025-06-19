@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Languages{% endblock %}
+
+{% block content %}
+<style>
+  .border-left-success {
+    border-left: 5px solid #198754;
+  }
+
+  .language-card {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .language-card:hover {
+    transform: scale(1.02);
+  }
+
+  .badge-pill {
+    font-size: 0.95rem;
+    padding: 6px 14px;
+  }
+</style>
+
+<div class="container mt-5">
+  <h2 class="text-success mb-4"><i class="bi bi-translate me-2"></i>Languages Known</h2>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm border-left-success language-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">🇬🇧 English</h5>
+          <p class="text-muted mb-2">Fluent in speaking, reading & writing.</p>
+          <span class="badge bg-success badge-pill">Speak</span>
+          <span class="badge bg-success badge-pill">Read</span>
+          <span class="badge bg-success badge-pill">Write</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm border-left-info language-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">🇮🇳 Telugu</h5>
+          <p class="text-muted mb-2">Native language with full fluency.</p>
+          <span class="badge bg-info text-dark badge-pill">Speak</span>
+          <span class="badge bg-info text-dark badge-pill">Read</span>
+          <span class="badge bg-info text-dark badge-pill">Write</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm border-left-warning language-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">🇮🇳 Hindi</h5>
+          <p class="text-muted mb-2">Comfortable in understanding and speaking.</p>
+          <span class="badge bg-warning text-dark badge-pill">Speak</span>
+          <span class="badge bg-warning text-dark badge-pill">Read</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional: Add more languages -->
+    <!--
+    <div class="col-md-4">
+      <div class="card shadow-sm border-left-secondary language-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">🇫🇷 French</h5>
+          <p class="text-muted mb-2">Basic proficiency in reading and writing.</p>
+          <span class="badge bg-secondary badge-pill">Read</span>
+          <span class="badge bg-secondary badge-pill">Write</span>
+        </div>
+      </div>
+    </div>
+    -->
+  </div>
+</div>
+{% endblock %}
